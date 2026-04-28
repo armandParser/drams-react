@@ -11,10 +11,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:app": "tsc && vite build --config vite.app.config.ts",
+    "preview:app": "vite preview --config vite.app.config.ts",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
+    "drams-react": "^0.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^4.1.18",
